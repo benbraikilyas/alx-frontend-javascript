@@ -1,5 +1,5 @@
 
-interface Teacher {
+Teacher interface {
     firstName: string;
     lastName: string;
     fullTimeEmployee: boolean;
@@ -8,7 +8,7 @@ interface Teacher {
     contract: boolean;
   }
   
-  const teacher3: Teacher = {
+  const teacher: Teacher = {
     firstName: 'John',
     lastName: 'Doe',
     fullTimeEmployee: false,
@@ -16,5 +16,5 @@ interface Teacher {
     contract: false,
   };
   
-  console.log(teacher3);
+  console.log(teacher);
   
