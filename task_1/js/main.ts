@@ -1,20 +1,19 @@
+export Teacher interface {
+  firstName: string;     // يمكن تعيينها فقط عند الإنشاء
+  lastName: string;      // يمكن تعيينها فقط عند الإنشاء
+  fullTimeEmployee: boolean;      // يجب أن يكون دائماً موجود
+  yearsOfExperience?: number;     // اختياري
+  location: string;               // يجب أن يكون دائماً موجود
+  [key: string]: any;             // يسمح بإضافة أي خصائص إضافية
+}
 
-Teacher interface {
-    firstName: string;
-    lastName: string;
-    fullTimeEmployee: boolean;
-    yearsOfExperience?: number;
-    location: string;
-    contract: boolean;
-  }
-  
-  const teacher: Teacher = {
-    firstName: 'John',
-    lastName: 'Doe',
-    fullTimeEmployee: false,
-    location: 'London',
-    contract: false,
-  };
-  
-  console.log(teacher);
-  
+// مثال على استخدام Teacher
+const Teacher: Teacher = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullTimeEmployee: false,
+  location: 'London',
+  contract: false,  // خاصية إضافية
+};
+
+console.log(Teacher);
