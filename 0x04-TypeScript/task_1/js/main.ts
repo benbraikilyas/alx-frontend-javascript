@@ -30,5 +30,5 @@ export function printTeacher(firstName: string, lastName: string): string {
 
 
 // example usage:
-console.log(printTeacher('John', 'Doe')); // -> J. Doe
-console.log(printTeacher('John', 'Doe')); // -> J. Doe
+printTeacher('John', 'Doe'); // -> J. Doe
+printTeacher('John', 'Doe'); // -> J. Doe
