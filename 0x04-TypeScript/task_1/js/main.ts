@@ -45,7 +45,13 @@ export interface StudentClassInterface {
 
 // Student class
 export class StudentClass implements StudentClassInterface {
-  constructor(private firstName: string, private lastName: string) {}
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
   workOnHomework(): string {
     return 'Currently working';
@@ -56,7 +62,7 @@ export class StudentClass implements StudentClassInterface {
   }
 }
 
-// Simple test
+// اختبار بسيط
 const student = new StudentClass('John', 'Doe');
 console.log(student.displayName());     // "John"
 console.log(student.workOnHomework());  // "Currently working"
