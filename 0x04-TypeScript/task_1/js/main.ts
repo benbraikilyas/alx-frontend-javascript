@@ -1,4 +1,3 @@
-
 export interface Teacher {
   readonly firstName: string;      // Can only be set at creation
   readonly lastName: string;       // Can only be set at creation
@@ -24,9 +23,10 @@ export interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-export const printTeacher: printTeacherFunction = (firstName, lastName) => {
+export function printTeacher(firstName: string, lastName: string): string {
   return `${firstName.charAt(0)}. ${lastName}`;
-};
+}
 
 // example usage:
+console.log(printTeacher('John', 'Doe')); // -> J. Doe
 console.log(printTeacher('John', 'Doe')); // -> J. Doe
