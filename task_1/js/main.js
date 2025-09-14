@@ -1,4 +1,4 @@
-var teacher3 = {
+    teacher3 = {
     firstName: 'John',
     lastName: 'Doe',
     fullTimeEmployee: false,
