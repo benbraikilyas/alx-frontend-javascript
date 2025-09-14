@@ -24,8 +24,9 @@ export interface printTeacherFunction {
 }
 
 export function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName[0]}. ${lastName}`;
+  const initial = firstName && firstName.length > 0 ? firstName[0].toUpperCase() : '';
+  return `${initial}. ${lastName}`;
 }
 
-
+// example usage:
 console.log(printTeacher('John', 'Doe')); // -> J. Doe
