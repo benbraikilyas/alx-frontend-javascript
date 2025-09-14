@@ -44,7 +44,7 @@ export interface StudentClassInterface {
 }
 
 // Student class
-export class StudentClass implements StudentClassInterface {
+class StudentClass {
   firstName: string;
   lastName: string;
 
