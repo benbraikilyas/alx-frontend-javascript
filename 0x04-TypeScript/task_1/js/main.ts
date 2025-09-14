@@ -24,9 +24,8 @@ export interface printTeacherFunction {
 }
 
 export function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
+  return `${firstName[0]}. ${lastName}`;
 }
 
-// example usage:
-console.log(printTeacher('John', 'Doe')); // -> J. Doe
+
 console.log(printTeacher('John', 'Doe')); // -> J. Doe
