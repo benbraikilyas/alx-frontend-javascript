@@ -47,7 +47,7 @@ export function createEmployee(salary: number | string): Director | Teacher {
 }
 
 export function isDirector(employee: Director | Teacher): employee is Director {
-  return 'workDirectorTasks' in employee;
+  return employee instanceof Director;
 }
 
 export function executeWork(employee: Director | Teacher): string {
@@ -69,3 +69,4 @@ console.log(executeWork(emp2));      // Expected: "Getting to director tasks"
 
 const emp3 = createEmployee('500');
 console.log(emp3.workFromHome());
+
