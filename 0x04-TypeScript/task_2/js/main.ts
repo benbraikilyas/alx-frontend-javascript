@@ -28,6 +28,23 @@ function executeWork(employee: Teacher | Director): void {
   }
 }
 
-// ✅ Expected output
-executeWork(createEmployee(200));   // Getting to work
-executeWork(createEmployee(1000));  // Getting to director tasks
+
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
+
+
+
+type Subjects = "Math" | "History";
+
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
+  }
+}
+
+
+console.log(teachClass("Math"));     // Teaching Math
+console.log(teachClass("History"));  // Teaching History
